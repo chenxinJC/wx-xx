@@ -1,0 +1,13 @@
+{
+	"pages": [
+		"pages/classsic/classsic"
+	],
+	"window": {
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "天行九歌",
+		"navigationBarTextStyle": "black",
+		"navigationStyle": "default",
+		"backgroundColor": "#ffffff",
+		"enablePullDownRefresh": false
+	}
+}
