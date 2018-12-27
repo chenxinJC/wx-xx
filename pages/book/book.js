@@ -1,8 +1,8 @@
 import {
-  ClassicModel
-} from '../../models/classic.js'
+  BookModel
+} from '../../models/book.js'
 
-let classic = new ClassicModel()
+const bookModel = new BookModel()
 
 Page({
 
@@ -10,18 +10,19 @@ Page({
    * 页面的初始数据
    */
   data: {
-    classic: null
+    books: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    classic.getLatest((res) => {
-      this.setData({
-        classic: res
+    bookModel.getHotList()
+      .then(res => {
+        this.setData({
+          books: res
+        })
       })
-    })
   },
 
   /**
